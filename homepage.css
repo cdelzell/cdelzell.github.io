@@ -1,0 +1,30 @@
+:root{
+--font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana;
+
+}
+
+body {
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+}
+
+.aboutMe{
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    gap: 10rem;
+    padding: 10rem;
+}
+
+.aboutMe img{
+    height: 10rem;
+    width: 10rem;
+}
+
+.aboutMe .comp{
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #000;
+    box-sizing: border-box; 
+}
