@@ -163,24 +163,27 @@ a:hover{
     display: flex;
     justify-content: center; 
     align-items: center; 
-    gap: 10rem;
     padding: 10rem;
-    padding-bottom: 5rem;
-    max-width: 100%;
-    overflow: hidden;
+    padding-bottom: 10rem;
 }
 
+/*
+    Not a circle because of the padding and box-sizing, but I like the different shape.
+    However, if you want to go back to a circle, apply padding on all edges.
+*/
 .aboutMe .personalImage{
-    height: 30rem;
-    width: 30rem;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
     border-radius: 50%;
+    padding-right: 10%;
+    box-sizing: border-box;
 }
 
 .aboutMe .comp{
-    flex: 1;
-    padding: 1rem;
+    padding: 5%;
     text-align: center;
-    /* box-sizing: border-box;  */
+    box-sizing: border-box;
 }
 
 .aboutMe .blurb{
@@ -296,3 +299,22 @@ a:hover{
     text-align: center;
 }
 
+
+
+
+
+
+
+
+
+
+
+/*
+    Smaller screen provisions
+    */
+
+@media screen and (max-width: 480px) {
+    .aboutMe .blurb{
+        font-size: 1rem;
+    }
+}
