@@ -94,6 +94,14 @@ a:hover{
 
 .header{
     margin-top: 0rem;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.header img{
+    max-width: 100%;
+    height: auto;
+
 }
 
 .attributes{
@@ -108,7 +116,6 @@ a:hover{
     height: 20rem;
     width: 15rem;
     border-radius: 5%;
-    font-size: 2rem;
     color: rgb(63, 67, 64);
     background-color:rgb(169, 199, 169);
     display: flex;
@@ -116,6 +123,10 @@ a:hover{
     justify-content: center;
     box-shadow: .05rem .12rem .16rem #2c2e2c;
     transition: transform .5s;
+}
+
+.intro {
+    font-size: 2rem;
 }
 
 /* .rectangle::after{
@@ -153,11 +164,9 @@ a:hover{
     align-items: center; 
     gap: 10rem;
     padding: 10rem;
-}
-
-.aboutMe img{
-    height: 35rem;
-    width: 35rem;
+    padding-bottom: 5rem;
+    max-width: 100%;
+    overflow: hidden;
 }
 
 .aboutMe .personalImage{
@@ -183,3 +192,106 @@ a:hover{
 .aboutMe .cs{
     color: #8FBC8B;
 }
+
+.experience{
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.experienceRect {
+    margin: 2rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.experience img{
+        max-width: 100%;
+        height: auto;
+        box-shadow: 2rem white;
+}
+
+.expText {
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    box-sizing: border-box;
+    white-space: normal;
+    text-align: center;
+}
+
+.experience .rectangle{
+    height: 30rem;
+    width: 23rem;
+    border-radius: 5%;
+    color: rgb(63, 67, 64);
+    background-color:rgb(169, 199, 169);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: .05rem .12rem .16rem #2c2e2c;
+    transition: transform .5s;
+}
+
+.experience .rectangle:hover .expParagraph{
+    display: none;
+}
+
+.experience .rectangle:hover .expSkills{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.experience .expParagraph{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0rem;
+    box-sizing: border-box;
+}
+
+.experience .expSkills{
+    display: none;
+}
+
+.experience .expSkills .rectangle{
+    height: 5rem;
+    width: 10rem;
+    border-radius: 5%;
+    color: rgb(63, 67, 64);
+    background-color:rgb(169, 199, 169);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: .05rem .12rem .16rem #2c2e2c;
+    transition: transform .5s;
+}
+
+.experience li{
+    line-height: 1.2rem;
+    white-space: normal;
+    text-align: center;
+}
+
+.experience h4{
+    color:#505d52;
+    margin: .5rem;
+    font-style: italic;
+    white-space: normal;
+    text-align: center;
+}
+
+.experience h2{
+    margin: .5rem;
+    white-space: normal;
+    text-align: center;
+}
+
