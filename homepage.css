@@ -61,7 +61,6 @@ blockquote, q {
 
 body {
     font-family: var(--font-family);
-    /*background-color: var(--background-color);*/
 }
 
 nav{
@@ -130,26 +129,6 @@ a:hover{
     font-size: 2vw;
 }
 
-/* .rectangle::after{
-    content: "passionate about xyz";
-    display: none;
-}
-
-.rectangle::before{
-    font-style: italic;
-    content: "not passionate about anything";
-} */
-
-/* .driven::after{
-    content: "passionate about xyz";
-    display: none;
-}
-
-.driven::before{
-    font-style: italic;
-    content: "not passionate about anything";
-} */
-
 .rectangle:hover{
     background-color: var(--secondary-color);
     transform: scale(1.1);
@@ -172,6 +151,7 @@ a:hover{
     However, if you want to go back to a circle, apply padding on all edges.
 */
 .aboutMe .personalImage{
+    position: relative;
     max-width: 70%;
     height: auto;
     object-fit: contain;
@@ -183,6 +163,7 @@ a:hover{
 
 
 .aboutMe .blurb{
+    position: relative;
     padding: 2vw 2vh;
     text-align: center;
     box-sizing: border-box;
@@ -199,8 +180,6 @@ a:hover{
 .experience{
     max-width: 100%;
     overflow: hidden;
-    /* background-image: url("images/experienceBanner2.png");
-    background-size: cover; */
 }
 
 .experienceRect {
@@ -219,10 +198,12 @@ a:hover{
         margin-bottom: -37vw;
 }
 
-.expText {
+.experience .expSkills h4 {
+    font-style: none;
     font-size: 1vw;
+    color:#323432;
     display: flex;
-    flex-direction: column;
+    font-family:'Bodoni MT', 'Bodoni 72' serif;
     align-items: center;
     justify-content: center;
     padding: 1vw;
@@ -236,7 +217,7 @@ a:hover{
     width: 23vw;
     border-radius: 5%;
     color: rgb(63, 67, 64);
-    background-color:rgb(169, 199, 169);
+    background-color:rgba(169, 199, 169, 0.649);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -276,11 +257,22 @@ a:hover{
     color: rgb(63, 67, 64);
     background-color:rgb(169, 199, 169);
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: center;
     justify-content: center;
     box-shadow: .1vh .16vh .16vh #2c2e2c;
+    padding: 20%;
     transition: transform .5s;
+    box-sizing: border-box;
+}
+
+.experience .expSkills .rectangle:hover{
+    transform: scale(1,1);
+}
+
+.experience .skillRect{
+    
+    margin: 20%;
 }
 
 .experience li{
@@ -307,6 +299,7 @@ a:hover{
 
 
 footer{
+    font-size: 2vw;
     background-color: #6a7d6e;
     bottom: 0;
     display: flex;
