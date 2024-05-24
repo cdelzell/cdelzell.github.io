@@ -217,7 +217,7 @@ a:hover{
         max-width: 100%;
         height: auto;
         box-shadow: 2rem white;
-        margin-bottom: -40vh;
+        margin-bottom: -63vh;
 }
 
 .expText {
@@ -233,8 +233,8 @@ a:hover{
 }
 
 .experience .rectangle{
-    height: 30rem;
-    width: 23rem;
+    height: 50vh;
+    width: 23vw;
     border-radius: 5%;
     color: rgb(63, 67, 64);
     background-color:rgb(169, 199, 169);
