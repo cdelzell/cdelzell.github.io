@@ -114,8 +114,8 @@ a:hover{
 }
 
 .rectangle{
-    height: 30vh;
-    width: 20vw;
+    height: 22vw;
+    width: 18vw;
     border-radius: 5%;
     color: rgb(63, 67, 64);
     background-color:rgb(169, 199, 169);
@@ -163,7 +163,7 @@ a:hover{
     display: flex;
     justify-content: center; 
     align-items: center; 
-    padding: 10vw;
+    padding: 3vw;
     padding-bottom: 10vh;
 }
 
@@ -172,21 +172,20 @@ a:hover{
     However, if you want to go back to a circle, apply padding on all edges.
 */
 .aboutMe .personalImage{
-    max-width: 100%;
+    max-width: 70%;
     height: auto;
     object-fit: contain;
     border-radius: 50%;
-    padding-right: 10%;
+    padding-right: 5vw;
+    padding-left: 1vw;
     box-sizing: border-box;
 }
 
-.aboutMe .comp{
-    padding: 5%;
-    text-align: center;
-    box-sizing: border-box;
-}
 
 .aboutMe .blurb{
+    padding: 2vw 2vh;
+    text-align: center;
+    box-sizing: border-box;
     font-size: 2.2vw;
     color: #3f3a3a;
     line-height: 3vw;
@@ -205,11 +204,11 @@ a:hover{
 }
 
 .experienceRect {
-    margin: 2rem 2rem;
+    margin: 2vw 2vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 3rem;
+    gap: 3vw;
     z-index: 1;
 }
 
@@ -217,23 +216,23 @@ a:hover{
         max-width: 100%;
         height: auto;
         box-shadow: 2rem white;
-        margin-bottom: -63vh;
+        margin-bottom: -37vw;
 }
 
 .expText {
-    font-size: 1rem;
+    font-size: 1vw;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 1rem;
+    padding: 1vw;
     box-sizing: border-box;
     white-space: normal;
     text-align: center;
 }
 
 .experience .rectangle{
-    height: 50vh;
+    height: 32vw;
     width: 23vw;
     border-radius: 5%;
     color: rgb(63, 67, 64);
@@ -241,7 +240,7 @@ a:hover{
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: .05rem .12rem .16rem #2c2e2c;
+    box-shadow: .1vh .16vh .16vh #2c2e2c;
     transition: transform .5s;
 }
 
@@ -262,7 +261,7 @@ a:hover{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 0rem;
+    padding: 0;
     box-sizing: border-box;
 }
 
@@ -271,8 +270,8 @@ a:hover{
 }
 
 .experience .expSkills .rectangle{
-    height: 5rem;
-    width: 10rem;
+    height: 12vh;
+    width: 15vw;
     border-radius: 5%;
     color: rgb(63, 67, 64);
     background-color:rgb(169, 199, 169);
@@ -280,26 +279,26 @@ a:hover{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    box-shadow: .05rem .12rem .16rem #2c2e2c;
+    box-shadow: .1vh .16vh .16vh #2c2e2c;
     transition: transform .5s;
 }
 
 .experience li{
-    line-height: 1.2rem;
+    line-height: 2.3vh;
     white-space: normal;
     text-align: center;
 }
 
 .experience h4{
     color:#505d52;
-    margin: .5rem;
+    margin: .5vw .5vh;
     font-style: italic;
     white-space: normal;
     text-align: center;
 }
 
 .experience h2{
-    margin: .5rem;
+    margin: .5vw .5vh;
     white-space: normal;
     text-align: center;
 }
@@ -322,12 +321,12 @@ footer{
 
 
 
-/*
+/* 
     Smaller screen provisions
-    */
+    
 
 @media screen and (max-width: 480px) {
     .aboutMe .blurb{
         font-size: 1rem;
     }
-}
+} */
