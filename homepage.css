@@ -71,16 +71,16 @@ nav{
     display: flex;
     align-items: center;
     z-index: 1;
-    box-shadow: 0 .1rem .5rem #3f3a3a;
+    box-shadow: 0 .3vw 1vw #3f3a3a;
     justify-content: space-between;
-    gap: 1rem;
-    padding: 0rem .7rem;
+    gap: 2vw;
+    padding: 0 1vw;
 }
 
 nav .options{
     display: flex;
     align-items: center;
-    gap: 2rem;
+    gap: 3vw;
 }
 
 nav a{
@@ -94,7 +94,7 @@ a:hover{
 }
 
 .header{
-    margin-top: 0rem;
+    margin-top: 0;
     max-width: 100%;
     overflow: hidden;
 }
@@ -106,28 +106,28 @@ a:hover{
 }
 
 .attributes{
-    margin: 2rem 2rem;
+    margin: 2vw 2vw;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 3rem;
+    gap: 3vw;
 }
 
 .rectangle{
-    height: 20rem;
-    width: 15rem;
+    height: 30vh;
+    width: 20vw;
     border-radius: 5%;
     color: rgb(63, 67, 64);
     background-color:rgb(169, 199, 169);
     display: flex;
     align-items: center;
     justify-content: center;
-    box-shadow: .05rem .12rem .16rem #2c2e2c;
+    box-shadow: .05vw .19vw .16vw #2c2e2c;
     transition: transform .5s;
 }
 
 .intro {
-    font-size: 2rem;
+    font-size: 2vw;
 }
 
 /* .rectangle::after{
@@ -163,8 +163,8 @@ a:hover{
     display: flex;
     justify-content: center; 
     align-items: center; 
-    padding: 10rem;
-    padding-bottom: 10rem;
+    padding: 10vw;
+    padding-bottom: 10vh;
 }
 
 /*
@@ -187,9 +187,9 @@ a:hover{
 }
 
 .aboutMe .blurb{
-    font-size: 2.2rem;
+    font-size: 2.2vw;
     color: #3f3a3a;
-    line-height: 3rem;
+    line-height: 3vw;
 
 }
 
@@ -200,6 +200,8 @@ a:hover{
 .experience{
     max-width: 100%;
     overflow: hidden;
+    /* background-image: url("images/experienceBanner2.png");
+    background-size: cover; */
 }
 
 .experienceRect {
@@ -208,12 +210,14 @@ a:hover{
     align-items: center;
     justify-content: center;
     gap: 3rem;
+    z-index: 1;
 }
 
 .experience img{
         max-width: 100%;
         height: auto;
         box-shadow: 2rem white;
+        margin-bottom: -40vh;
 }
 
 .expText {
@@ -243,13 +247,14 @@ a:hover{
 
 .experience .rectangle:hover .expParagraph{
     display: none;
+    
 }
 
 .experience .rectangle:hover .expSkills{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .experience .expParagraph{
@@ -302,7 +307,15 @@ a:hover{
 
 
 
-
+footer{
+    background-color: #6a7d6e;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2%;
+    margin-top: 10%;
+}
 
 
 
