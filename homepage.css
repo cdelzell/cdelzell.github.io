@@ -251,8 +251,8 @@ a:hover{
 }
 
 .experience .expSkills .rectangle{
-    height: 12vh;
-    width: 15vw;
+    height: 27%;
+    width: 130%;
     border-radius: 5%;
     color: rgb(63, 67, 64);
     background-color:rgb(169, 199, 169);
@@ -274,19 +274,19 @@ a:hover{
 .experience .skillRect{
 }
 
-.experience li{
+.experience p{
     font-size: 1.2vw;
     line-height: 1.8vw;
-    margin: 3% 1%;
+    margin: 0% 3%;
     white-space: normal;
     text-align: center;
 }
 
 .experience h4{
     color:#505d52;
-    font-size: 1vw;
+    font-size: 1.2vw;
     margin: 3% 1%;
-    line-height: 1vw;
+    line-height: 1.3vw;
     font-style: italic;
     white-space: normal;
     text-align: center;
@@ -294,7 +294,7 @@ a:hover{
 
 .experience h2{
     font-size: 1.6vw;
-    margin: 5% 5%;
+    margin: 2% 5%;
     white-space: normal;
     text-align: center;
 }
