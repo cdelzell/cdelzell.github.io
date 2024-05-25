@@ -194,7 +194,7 @@ a:hover{
 .experience img{
         max-width: 100%;
         height: auto;
-        box-shadow: 2rem white;
+        box-shadow: 2vw white;
         margin-bottom: -37vw;
 }
 
@@ -234,7 +234,7 @@ a:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .experience .expParagraph{
@@ -271,26 +271,30 @@ a:hover{
 }
 
 .experience .skillRect{
-    
     margin: 20%;
 }
 
 .experience li{
-    line-height: 2.3vh;
+    font-size: 1.2vw;
+    line-height: 1.8vw;
+    margin: 3% 1%;
     white-space: normal;
     text-align: center;
 }
 
 .experience h4{
     color:#505d52;
-    margin: .5vw .5vh;
+    font-size: 1vw;
+    margin: 3% 1%;
+    line-height: 1vw;
     font-style: italic;
     white-space: normal;
     text-align: center;
 }
 
 .experience h2{
-    margin: .5vw .5vh;
+    font-size: 1.6vw;
+    margin: 5% 5%;
     white-space: normal;
     text-align: center;
 }
