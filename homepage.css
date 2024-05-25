@@ -234,7 +234,7 @@ a:hover{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 
 .experience .expParagraph{
@@ -264,6 +264,7 @@ a:hover{
     padding: 20%;
     transition: transform .5s;
     box-sizing: border-box;
+    margin: 10%;
 }
 
 .experience .expSkills .rectangle:hover{
@@ -271,7 +272,6 @@ a:hover{
 }
 
 .experience .skillRect{
-    margin: 20%;
 }
 
 .experience li{
