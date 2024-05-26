@@ -48,9 +48,8 @@ blockquote, q {
 
 
 /*
-    Below is the CSS styling for the wesbite.
+    General styling.
 */
-
 :root{
     --font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana;
     --primary-color: #000000;	
@@ -63,6 +62,13 @@ body {
     font-family: var(--font-family);
 }
 
+a:hover{
+    color: var(--secondary-color);
+}
+
+/*
+    Navigation bar styling.
+*/
 nav{
     height: 4vw;
     background-color: rgb(255, 255, 255);
@@ -97,12 +103,30 @@ nav h1{
 }
 
 
-a:hover{
-    color: var(--secondary-color);
+/*
+    Provides the return to the top of the website.
+*/
+.backToTop{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 2;
+    padding: 1vw;
+   /* margin-bottom: 3.3vw; */
+    box-sizing: border-box;
 }
 
+.backToTop img{
+    max-width: 100%;
+    height: auto;
+}
+
+
+/*
+    Contains the header image.
+*/
 .header{
-    margin-top: 0;
+    position:relative;
     max-width: 100%;
     overflow: hidden;
 }
@@ -110,9 +134,11 @@ a:hover{
 .header img{
     max-width: 100%;
     height: auto;
-
 }
 
+/*
+    Format styling for the attribute rectangles.
+*/
 .attributes{
     margin: 2vw 2vw;
     display: flex;
@@ -121,6 +147,9 @@ a:hover{
     gap: 3vw;
 }
 
+/*
+    Attribute rectangle and text styling.
+*/
 .rectangle{
     height: 22vw;
     width: 18vw;
@@ -138,6 +167,9 @@ a:hover{
     font-size: 2vw;
 }
 
+/*
+    Hover functionality for the attribute rectangles.
+*/
 .rectangle:hover{
     background-color: var(--secondary-color);
     transform: scale(1.1);
@@ -147,13 +179,18 @@ a:hover{
     
 }
 
+/*
+    Provides formatting for the About Me section.
+*/
 .aboutMe{
     display: flex;
-    justify-content: center; 
+    justify-content: space-evenly; 
     align-items: center;
+    gap: 3vw;
     padding-top: 7vw; 
     padding-bottom: 10vw;
 }
+
 
 /*
     Not a circle because of the padding and box-sizing, but I like the different shape.
@@ -165,8 +202,9 @@ a:hover{
     height: auto;
     object-fit: contain;
     border-radius: 50%;
-    padding-right: 5vw;
-    padding-left: 1vw;
+    /* padding-top: 9vw;
+    padding-bottom: 5vw; */
+    padding-left: 2vw;
     box-sizing: border-box;
 }
 
@@ -186,10 +224,32 @@ a:hover{
     color: #8FBC8B;
 }
 
+
+/*
+    General experience section.
+*/
 .experience{
     max-width: 100%;
     overflow: hidden;
     padding-top: 4vw;
+}
+
+
+/*
+    Creates the large rectangles base class for the experience section.
+    Creates the base text fields for the experience section.
+*/
+.experience .rectangle{
+    height: 32vw;
+    width: 23vw;
+    border-radius: 5%;
+    color: rgb(63, 67, 64);
+    background-color:rgba(169, 199, 169, 0.649);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    box-shadow: .1vh .16vh .16vh #2c2e2c;
+    transition: transform .5s;
 }
 
 .experienceRect {
@@ -199,91 +259,6 @@ a:hover{
     justify-content: center;
     gap: 3vw;
     z-index: 1;
-}
-
-.experience img{
-        max-width: 100%;
-        height: auto;
-        box-shadow: 2vw white;
-        margin-bottom: -37vw;
-}
-
-.experience .expSkills h4 {
-    font-style: none;
-    font-size: 1vw;
-    color:#323432;
-    display: flex;
-    font-family:'Bodoni MT', 'Bodoni 72' serif;
-    align-items: center;
-    justify-content: center;
-    padding: 1vw;
-    box-sizing: border-box;
-    white-space: normal;
-    text-align: center;
-}
-
-.experience .rectangle{
-    height: 32vw;
-    width: 23vw;
-    border-radius: 5%;
-    color: rgb(63, 67, 64);
-    background-color:rgba(169, 199, 169, 0.649);
-    display: flex;
-    align-items: center;
-    justify-content: space evenly;
-    box-shadow: .1vh .16vh .16vh #2c2e2c;
-    transition: transform .5s;
-}
-
-.experience .rectangle:hover .expParagraph{
-    display: none;
-    
-}
-
-.experience .rectangle:hover .expSkills{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.experience .expParagraph{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-.experience .expSkills{
-    display: none;
-}
-
-.experience .expSkills .rectangle{
-    height: 20%;
-    width: 60%;
-    border-radius: 5%;
-    color: rgb(63, 67, 64);
-    background-color:rgb(169, 199, 169);
-    display: flex;
-    /* flex-direction: column; */
-    align-items: center;
-    justify-content: center;
-    box-shadow: .1% .16% .16% #2c2e2c;
-    /* padding: 20%; */
-    transition: transform .5s;
-    box-sizing: border-box;
-    /* margin: 10%; */
-}
-
-.experience .expSkills .rectangle:hover{
-    transform: scale(1,1);
-}
-
-.experience .skillRect{
 }
 
 .experience p{
@@ -312,10 +287,98 @@ a:hover{
 }
 
 
+/*
+    Creates the background image for the experience section.
+    Proper margining to distribute the rectangles correctly.
+*/
+.experience img{
+        max-width: 100%;
+        height: auto;
+        box-shadow: 2vw white;
+        margin-bottom: -37vw;
+}
 
 
+/*
+    Creates the initial view of the experience rectangle.
+    Provides information on previous/current positions.
+*/
+.experience .expParagraph{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*
+    Creates the skills view of the experience rectangle.
+    Provides information on skills gained in previous/current positions.
+*/
+.experience .expSkills{
+    display: none;
+}
+
+.experience .expSkills .rectangle{
+    height: 20%;
+    width: 60%;
+    border-radius: 5%;
+    color: rgb(63, 67, 64);
+    background-color:rgb(169, 199, 169);
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    box-shadow: .1% .16% .16% #2c2e2c;
+    /* padding: 20%; */
+    transition: transform .5s;
+    box-sizing: border-box;
+    /* margin: 10%; */
+}
+
+.experience .expSkills h4 {
+    font-style: none;
+    font-size: 1vw;
+    color:#323432;
+    display: flex;
+    font-family:'Bodoni MT', 'Bodoni 72' serif;
+    align-items: center;
+    justify-content: center;
+    padding: 1vw;
+    box-sizing: border-box;
+    white-space: normal;
+    text-align: center;
+}
+
+
+/*
+    Hover functionality of the experience class.
+*/
+.experience .rectangle:hover .expParagraph{
+    display: none;
+}
+
+.experience .rectangle:hover .expSkills{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.experience .expSkills .rectangle:hover{
+    transform: scale(1,1);
+}
+
+
+/*
+    Creates the styling for the footer.
+*/
 .footer{
-    height: 2.8vw;
+    height: 5vw;
     /* font-size: 2vw; */
     background-color: #6a7d6e;
     bottom: 0;
@@ -325,16 +388,17 @@ a:hover{
     /* padding: 2%; */
     box-sizing: border-box;
     margin-top: 10%;
+    overflow: hidden;
+    z-index: 4;
 }
 
 footer .icons{
-    height: auto;
-    width: auto;
+    /* height: auto;
+    max-width: 100%; */
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10%;
-    /* padding: 10%; */
 }
 
 footer .icons img{
@@ -345,19 +409,4 @@ footer .icons img{
 
 /* footer img[alt]:hover::after{
     display: flex;
-} */
-
-
-
-
-
-
-/* 
-    Smaller screen provisions
-    
-
-@media screen and (max-width: 480px) {
-    .aboutMe .blurb{
-        font-size: 1rem;
-    }
 } */
