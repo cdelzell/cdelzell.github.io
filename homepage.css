@@ -64,6 +64,7 @@ body {
 }
 
 nav{
+    height: 4vw;
     background-color: rgb(255, 255, 255);
     position: sticky;
     top: 0;
@@ -85,6 +86,14 @@ nav .options{
 nav a{
     color:#3f3a3a;
     text-decoration: none;
+}
+
+nav li{
+    font-size: 1vw;
+}
+
+nav h1{
+    font-size: 1vw;
 }
 
 
@@ -141,9 +150,9 @@ a:hover{
 .aboutMe{
     display: flex;
     justify-content: center; 
-    align-items: center; 
-    padding: 3vw;
-    padding-bottom: 10vh;
+    align-items: center;
+    padding-top: 7vw; 
+    padding-bottom: 10vw;
 }
 
 /*
@@ -152,7 +161,7 @@ a:hover{
 */
 .aboutMe .personalImage{
     position: relative;
-    max-width: 70%;
+    max-width: 50%;
     height: auto;
     object-fit: contain;
     border-radius: 50%;
@@ -180,6 +189,7 @@ a:hover{
 .experience{
     max-width: 100%;
     overflow: hidden;
+    padding-top: 4vw;
 }
 
 .experienceRect {
@@ -304,16 +314,38 @@ a:hover{
 
 
 
-footer{
-    font-size: 2vw;
+.footer{
+    height: 2.8vw;
+    /* font-size: 2vw; */
     background-color: #6a7d6e;
     bottom: 0;
     display: flex;
     align-items: center;
-    justify-content: center;
-    padding: 2%;
+    justify-content: space-evenly;
+    /* padding: 2%; */
+    box-sizing: border-box;
     margin-top: 10%;
 }
+
+footer .icons{
+    height: auto;
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+    /* padding: 10%; */
+}
+
+footer .icons img{
+    max-width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+/* footer img[alt]:hover::after{
+    display: flex;
+} */
 
 
 
