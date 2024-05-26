@@ -220,7 +220,7 @@ a:hover{
     background-color:rgba(169, 199, 169, 0.649);
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space evenly;
     box-shadow: .1vh .16vh .16vh #2c2e2c;
     transition: transform .5s;
 }
@@ -231,6 +231,8 @@ a:hover{
 }
 
 .experience .rectangle:hover .expSkills{
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -251,8 +253,8 @@ a:hover{
 }
 
 .experience .expSkills .rectangle{
-    height: 27%;
-    width: 130%;
+    height: 24%;
+    width: 60%;
     border-radius: 5%;
     color: rgb(63, 67, 64);
     background-color:rgb(169, 199, 169);
@@ -264,7 +266,7 @@ a:hover{
     padding: 20%;
     transition: transform .5s;
     box-sizing: border-box;
-    margin: 10%;
+    /* margin: 10%; */
 }
 
 .experience .expSkills .rectangle:hover{
