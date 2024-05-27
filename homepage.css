@@ -80,7 +80,8 @@ nav{
     box-shadow: 0 .3vw 1vw #3f3a3a;
     justify-content: space-between;
     gap: 2vw;
-    padding: 0 1vw;
+    padding-left: 1vw;
+    padding-right: 1.5vw;
 }
 
 nav .options{
@@ -110,15 +111,14 @@ nav h1{
     position: fixed;
     bottom: 0;
     right: 0;
-    z-index: 2;
     padding: 1vw;
-   /* margin-bottom: 3.3vw; */
     box-sizing: border-box;
 }
 
 .backToTop img{
     max-width: 2vw;
     height: auto;
+    z-index: 2;
 }
 
 
@@ -198,7 +198,7 @@ nav h1{
 */
 .aboutMe .personalImage{
     position: relative;
-    max-width: 50%;
+    max-width: 40vw;
     height: auto;
     object-fit: contain;
     border-radius: 50%;
@@ -211,6 +211,7 @@ nav h1{
 
 .aboutMe .blurb{
     position: relative;
+    width: 50vw;
     padding: 2vw 2vh;
     text-align: center;
     box-sizing: border-box;
@@ -379,26 +380,36 @@ nav h1{
 */
 .footer{
     height: 5vw;
-    /* font-size: 2vw; */
     background-color: #6a7d6e;
-    bottom: 0;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
-    /* padding: 2%; */
+    justify-content: space-between;
     box-sizing: border-box;
     margin-top: 10%;
     overflow: hidden;
-    z-index: 4;
+    /* position: sticky; */
+    /* font-size: 2vw; */
+    /* padding: 2%; */
+}
+
+.footer .icons a{
+    text-decoration: none;
+}
+
+.footer .icons p{
+    font-size: 1.5vw;
+    color: #000000a9;
 }
 
 footer .icons{
     height: 100%;
-    width: 50%;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10%;
+    padding: 2vw;
+    box-sizing: border-box;
 }
 
 footer .icons img{
@@ -407,7 +418,3 @@ footer .icons img{
     height: auto;
     box-sizing: border-box;
 }
-
-/* footer img[alt]:hover::after{
-    display: flex;
-} */
