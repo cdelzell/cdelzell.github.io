@@ -208,6 +208,10 @@ img{
     text-align: center;
 }
 
+.personalStatementAnimation{
+    animation: appear 2s linear;
+}
+
 .personalStatement h1{
     /* display: flex;
     align-items: center; */
@@ -224,6 +228,15 @@ img{
     text-align: center; */
     font-size: 3.5vw;
     font-weight: 100;
+}
+
+@keyframes appear{
+    from{
+        display: none;
+    }
+    to{
+        display: contents;
+    }
 }
 
 /*
@@ -276,12 +289,14 @@ img{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10vw;
+    padding: 5vw;
+    box-sizing: border-box;
+    overflow: hidden;
 }
 
 .singleExp img{
     max-width: 50%;
-    height: 25%;
+    height: auto;
     padding: 2vw;
 }
 
