@@ -113,17 +113,12 @@ nav h1{
     text-align: center;
     /* justify-content: center; */
 }
+
 img{
     max-width: 100%;
     height: auto;
     z-index:0;
 }
-
-/* .intro{
-    display: flex;
-    padding: 2vw;
-    margin: -100vw;
-} */
 
 .welcome .welcomeText{
     font-size: 10vw;
@@ -132,13 +127,13 @@ img{
     /* transform: translate(0, -50%, ); */
     margin-top: -28vw;
     margin-right: 39vw;
-    animation: unjumble 2s ease-in;
+    animation: reveal 2s ease-in;
     color:#faf9f9;
     font-weight: 100;
     z-index: 2;
 }
 
-@keyframes unjumble{
+@keyframes reveal{
     from{
         opacity: 0;
     }
@@ -146,6 +141,10 @@ img{
         opacity: 1;
     }
 }
+
+/*
+    Styling for the connection icons on the welcome header.
+*/
 
 .welcome .introConnect{
     margin-top: 17vw;
@@ -185,21 +184,7 @@ img{
 }
 
 /*
-    Provides formatting for the About Me section.
-*/
-.aboutMe{
-    /* background-color: #cbe3a47a; */
-    display: flex;
-    justify-content: space-evenly; 
-    align-items: center;
-    gap: 3vw;
-    /* margin-top: 5vw; */
-    padding: 7vw; 
-    /* padding-bottom: 10vw; */
-}
-
-/*
-    Personal statement.
+    Styling for the personal statement.
 */
 
 .personalStatement{
@@ -240,48 +225,7 @@ img{
 }
 
 /*
-    Not a circle because of the padding and box-sizing, but I like the different shape.
-    However, if you want to go back to a circle, apply padding on all edges.
-*/
-.aboutMe .personalImage{
-    position: relative;
-    max-width: 40vw;
-    height: auto;
-    object-fit: contain;
-    border-radius: 50%;
-    /* padding-top: 9vw;
-    padding-bottom: 5vw; */
-    padding-left: 2vw;
-    box-sizing: border-box;
-}
-
-
-.aboutMe .blurb{
-    /* background-color: #faf9f9;
-    box-shadow: .1vh .16vh .16vh #2c2e2c;
-    border-radius: 5%; */
-    position: relative;
-    width: 50vw;
-    margin-left: -20vw;
-    padding: 2vw 2vh;
-    text-align: center;
-    box-sizing: border-box;
-    font-size: 2.2vw;
-    color: #3f3a3a;
-    line-height: 3vw;
-
-}
-
-.aboutMe .cs{
-    color: #8FBC8B;
-    /* background: linear-gradient( #6d9074, #8ecde9);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent; */
-}
-
-/*
-    Customizes the seperator line.
+    Customizes each experience section.
 */
 
 .singleExp{
@@ -289,18 +233,19 @@ img{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 5vw;
     box-sizing: border-box;
     overflow: hidden;
 }
 
 .singleExp img{
+    box-sizing: border-box;
     max-width: 50%;
     height: auto;
     padding: 2vw;
 }
 
 .singleExp .expTextRight{
+    box-sizing: border-box;
     width: 50%;
     height: 25%;
     display: flex;
@@ -313,6 +258,7 @@ img{
 }
 
 .singleExp .expTextLeft{
+    box-sizing: border-box;
     width: 50%;
     height: 25%;
     display: flex;
@@ -324,24 +270,29 @@ img{
     padding: 2vw;
 }
 
-.singleExp h2{
+/*
+    Styling for the experience text, not currently in use.
+*/
+
+/* .text h2{
     margin: 1vw;
     font-weight: 100;
     font-size: 5vw;
 }
 
-.singleExp h4{
+.text h4{
     margin: 1vw;
     font-weight: 100;
     font-size: 2vw;
     font-style: italic;
 }
 
-.singleExp p{
+.text p{
     margin: 1vw;
     font-weight: 100;
+    
     font-size: 2vw;
-}
+} */
 
 @keyframes underline{
     from{
@@ -357,227 +308,6 @@ img{
     animation: underline linear forwards;
 }
 
-/*
-    General experience section.
-*/
-.experience{
-    /* background-color: #cbe3a47a; */
-    max-width: 100%;
-    overflow: hidden;
-    padding-top: 4vw;
-}
-
-
-/*
-    Creates the large rectangles base class for the experience section.
-    Creates the base text fields for the experience section.
-*/
-.experience .rectangle{
-    height: 32vw;
-    width: 23vw;
-    border-radius: 5%;
-    color: rgb(63, 67, 64);
-    background-color:rgba(169, 199, 169, 0.649);
-    background: linear-gradient( #9abaa1d0, #8ecee9bb);
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    box-shadow: .1vh .16vh .16vh #2c2e2c;
-    transition: transform .5s;
-}
-
-.experienceRect {
-    margin: 2vw 2vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 3vw;
-    z-index: 1;
-}
-
-.experience p{
-    font-size: 1.2vw;
-    line-height: 1.8vw;
-    margin: 0% 3%;
-    white-space: normal;
-    text-align: center;
-}
-
-.experience h4{
-    color:#505d52;
-    font-size: 1.2vw;
-    margin: 3% 1%;
-    line-height: 1.3vw;
-    font-style: italic;
-    white-space: normal;
-    text-align: center;
-}
-
-.experience h2{
-    font-size: 1.6vw;
-    margin: 2% 5%;
-    white-space: normal;
-    text-align: center;
-}
-
-
-/*
-    Creates the background image for the experience section.
-    Proper margining to distribute the rectangles correctly.
-*/
-.experience img{
-        max-width: 100%;
-        height: auto;
-        box-shadow: 2vw white;
-        margin-bottom: -37vw;
-}
-
-
-/*
-    Creates the initial view of the experience rectangle.
-    Provides information on previous/current positions.
-*/
-.experience .expParagraph{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-
-/*
-    Creates the skills view of the experience rectangle.
-    Provides information on skills gained in previous/current positions.
-*/
-.experience .expSkills{
-    display: none;
-}
-
-.experience .expSkills .rectangle{
-    height: 20%;
-    width: 60%;
-    border-radius: 5%;
-    color: rgb(63, 67, 64);
-    /* background-color:rgb(169, 199, 169); */
-    /* background: linear-gradient( #dcdf9ed0, --background-color); */
-    display: flex;
-    /* flex-direction: column; */
-    align-items: center;
-    justify-content: center;
-    box-shadow: .1% .16% .16% #2c2e2c;
-    /* padding: 20%; */
-    transition: transform .5s;
-    box-sizing: border-box;
-    /* margin: 10%; */
-}
-
-.experience .expSkills h4 {
-    font-style: none;
-    font-size: 1vw;
-    color:#323432;
-    display: flex;
-    font-family:'Bodoni MT', 'Bodoni 72' serif;
-    align-items: center;
-    justify-content: center;
-    padding: 1vw;
-    box-sizing: border-box;
-    white-space: normal;
-    text-align: center;
-}
-
-
-/*
-    Hover functionality of the experience class.
-*/
-.experience .rectangle:hover .expParagraph{
-    display: none;
-}
-
-.experience .rectangle:hover .expSkills{
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
-.experience .expSkills .rectangle:hover{
-    transform: scale(1,1);
-}
-
-/*
-    Format image with white blocks to make it more interesting.
-*/
-
-.experienceBackground{
-
-}
-
-#blocks{
-    position: relative;
-    z-index: 2;
-}
-
-#secondTrees{
-    position: relative;
-    z-index: 0;
-    max-width: 100%;
-    height: auto;
-}
-
-#blockUpperLeft{
-    background-color: #ffffff;
-    width: 50%;
-    z-index: 2;
-    /* position: relative;
-    z-index: 2;
-    background-color: #fdfdfd;
-    height: 15vw;
-    width: 50%;
-    margin-top: -40vw; */
-}
-
-#blockUpperRight{
-    background-color: #ffffff;
-    width: 50%;
-    z-index: 2;
-    /* position: relative;
-    z-index: 2;
-    background-color: #fdfdfd;
-    height: 15vw;
-    width: 50%;
-    margin-top: -25.5vw;*/
-    margin-left: 50%;
-}
-
-#blockLowerRight{
-    background-color: #ffffff;
-    width: 50%;
-    z-index: 2;
-    /* position: relative;
-    z-index: 2;
-    background-color: #fdfdfd;
-    height: 15vw;
-    width: 50%;
-    margin-top: -25.5vw;*/
-    margin-left: 50%;
-}
-
-#blockLowerLeft{
-    background-color: #ffffff;
-    width: 50%;
-    z-index: 2;
-    /* position: relative;
-    z-index: 2;
-    background-color: #fdfdfd;
-    height: 15vw;
-    width: 50%;
-    margin-top: -25.5vw;
-    margin-left: 50%; */
-}
 /*
     Creates the styling for the footer.
 */
