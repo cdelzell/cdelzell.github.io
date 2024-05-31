@@ -189,7 +189,7 @@ img{
 
 .personalStatement{
     font-family: "Optima";
-    padding: 10vw;
+    padding: 15vw;
     text-align: center;
 }
 
@@ -234,6 +234,7 @@ img{
     align-items: center;
     justify-content: center;
     box-sizing: border-box;
+    padding: 5vw;
     overflow: hidden;
 }
 
@@ -274,25 +275,24 @@ img{
     Styling for the experience text, not currently in use.
 */
 
-/* .text h2{
-    margin: 1vw;
+.text h2{
+    margin: .5vw;
     font-weight: 100;
     font-size: 5vw;
 }
 
 .text h4{
-    margin: 1vw;
+    margin: .5vw;
     font-weight: 100;
     font-size: 2vw;
     font-style: italic;
 }
 
 .text p{
-    margin: 1vw;
+    margin: .5vw;
     font-weight: 100;
-    
     font-size: 2vw;
-} */
+}
 
 @keyframes underline{
     from{
