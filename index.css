@@ -293,12 +293,12 @@ img{
 
 .singleExp .expTextRightPremier{
     box-sizing: border-box;
-    width: 30vw;
+    width: 40vw;
     height: 30vw;
     display: flex;
     flex-direction: column;
     text-align: left;
-    justify-content: space-evenly;
+    justify-content: center;
     /* box-shadow: .1vh .16vh .2vh .17vw #404140;
     border-radius: 5%; */
     padding-left: 2vw;
@@ -320,7 +320,7 @@ img{
     display: flex;
     flex-direction: column;
     text-align: right;
-    justify-content: space-evenly;
+    justify-content: center;
     /* box-shadow: .1vh .16vh .2vh .17vw #404140;
     border-radius: 5%; */
     padding-right: 2vw;
