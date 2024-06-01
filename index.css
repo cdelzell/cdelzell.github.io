@@ -83,6 +83,7 @@ nav{
     gap: 2vw;
     padding-left: 1vw;
     padding-right: 1.5vw;
+    z-index: 5;
 }
 
 nav .options{
@@ -238,6 +239,93 @@ img{
     overflow: hidden;
 }
 
+.singleExp .rectangleScoular{
+    width: 35vw;
+    height: 30vw;
+    border-radius: 5%;
+    background-image: url("images/scoularBuild.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.singleExp .expTextRightScoular{
+    box-sizing: border-box;
+    width: 35vw;
+    height: 30vw;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: space-evenly;
+    /* box-shadow: .1vh .16vh .2vh .17vw #404140;
+    border-radius: 5%; */
+    padding-left: 2vw;
+}
+
+.singleExp .rectangleNSAA{
+    width: 45vw;
+    height: 30vw;
+    border-radius: 5%;
+    background-image: url("images/nsaa.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.singleExp .expTextLeftNSAA{
+    box-sizing: border-box;
+    width: 45vw;
+    height: 30vw;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    justify-content: space-evenly;
+    /* box-shadow: .1vh .16vh .2vh .17vw #404140;
+    border-radius: 5%; */
+    padding-right: 2vw;
+}
+
+.singleExp .rectanglePremier{
+    width: 30vw;
+    height: 30vw;
+    background-image: url("images/premier.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.singleExp .expTextRightPremier{
+    box-sizing: border-box;
+    width: 30vw;
+    height: 30vw;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: space-evenly;
+    /* box-shadow: .1vh .16vh .2vh .17vw #404140;
+    border-radius: 5%; */
+    padding-left: 2vw;
+}
+
+.singleExp .rectangleWebsite{
+    width: 35vw;
+    height: 26vw;
+    border-radius: 5%;
+    background-image: url("images/trees.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.singleExp .expTextLeftWebsite{
+    box-sizing: border-box;
+    width: 35vw;
+    height: 26vw;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    justify-content: space-evenly;
+    /* box-shadow: .1vh .16vh .2vh .17vw #404140;
+    border-radius: 5%; */
+    padding-right: 2vw;
+}
+
 .singleExp img{
     box-sizing: border-box;
     max-width: 50%;
@@ -245,30 +333,95 @@ img{
     padding: 2vw;
 }
 
-.singleExp .expTextRight{
-    box-sizing: border-box;
-    width: 50%;
-    height: 25%;
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    justify-content: space-evenly;
-    /* box-shadow: .1vh .16vh .2vh .17vw #404140;
-    border-radius: 5%; */
-    padding: 2vw;
+/*
+    Creates the skills view of the experience rectangle.
+    Provides information on skills gained in previous/current positions.
+*/
+.singleExp .rectanglePremier .expSkillsPremier {
+    display: none;
+    /* background-image: url("images/scoularBuild.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .5; */
+    border-radius: 5%;
 }
 
-.singleExp .expTextLeft{
-    box-sizing: border-box;
+.singleExp .rectanglePremier .expSkillsPremier::before {
+    display: none;
+    background-image: url("images/scoularBuild.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .5;
+    border-radius: 5%;
+
+}
+
+.singleExp .rectanglePremier .expSkillsBackground {
+    display: none;
+    background-image: url("images/scoularBuild.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .5;
+    border-radius: 5%;
+}
+
+.singleExp .rectanglePremier .expSkillsPremier .rectangle{
+    height: 30%;
     width: 50%;
-    height: 25%;
+    border-radius: 5%;
+    color: rgb(63, 67, 64);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: .1% .16% .16% #2c2e2c;
+    transition: transform .5s;
+    box-sizing: border-box;
+}
+
+.singleExp .rectanglePremier .expSkillsPremier h4 {
+    font-style: none;
+    font-size: 1vw;
+    color:#323432;
+    display: flex;
+    font-family:'Bodoni MT', 'Bodoni 72' serif;
+    align-items: center;
+    justify-content: center;
+    padding: 1vw;
+    box-sizing: border-box;
+    white-space: normal;
+    text-align: center;
+}
+
+
+/*
+    Hover functionality of the experience class.
+*/
+.singleExp .rectanglePremier:hover {
+    background-image: none;
+}
+
+.singleExp .rectanglePremier:hover .expSkillsPremier{
+    height: 100%;
+    width: 100%;
+    position: relative;
     display: flex;
     flex-direction: column;
-    text-align: right;
+    align-items: center;
     justify-content: space-evenly;
-    /* box-shadow: .1vh .16vh .2vh .17vw #404140;
-    border-radius: 5%; */
-    padding: 2vw;
+}
+
+.singleExp .rectanglePremier:hover .expSkillsBackground{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.singleExp .expSkills .rectangle:hover{
+    transform: scale(1,1);
 }
 
 /*
