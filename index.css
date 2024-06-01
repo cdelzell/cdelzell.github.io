@@ -259,6 +259,7 @@ img{
     /* box-shadow: .1vh .16vh .2vh .17vw #404140;
     border-radius: 5%; */
     padding-left: 2vw;
+    padding-bottom: 2vw;
 }
 
 .singleExp .rectangleNSAA{
@@ -281,6 +282,7 @@ img{
     /* box-shadow: .1vh .16vh .2vh .17vw #404140;
     border-radius: 5%; */
     padding-right: 2vw;
+    padding-bottom: 2vw;
 }
 
 .singleExp .rectanglePremier{
@@ -302,6 +304,7 @@ img{
     /* box-shadow: .1vh .16vh .2vh .17vw #404140;
     border-radius: 5%; */
     padding-left: 2vw;
+    padding-bottom: 2vw;
 }
 
 .singleExp .rectangleWebsite{
@@ -324,6 +327,7 @@ img{
     /* box-shadow: .1vh .16vh .2vh .17vw #404140;
     border-radius: 5%; */
     padding-right: 2vw;
+    padding-bottom: 2vw;
 }
 
 .singleExp img{
