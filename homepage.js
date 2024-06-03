@@ -42,12 +42,26 @@
 
 
 
-const observer = new IntersectionObserver(entries => {
+const personalStatement = new IntersectionObserver(entries => {
     for(let i = 0; i < entries.length; i++){
-        if(entries[i].isIntersection){
+        if(entries[i].isIntersecting){
             entries[i].target.classList.add("personalStatementAnimation");
+        } else{
+            entries[i].target.classList.remove("personalStatementAnimation");
         }
     }
 })
 
-observer.observe(document.getElementById("hello"));
+personalStatement.observe(document.getElementById("hello"));
+
+const heading = new IntersectionObserver(entries => {
+    for(let i = 0; i < entries.length; i++){
+        if(entries[i].isIntersecting){
+            entries[i].target.classList.add("underline");
+        } else{
+            entries[i].target.classList.remove("underline");
+        }
+    }
+})
+
+heading.observe(document.getElementById("heading"));

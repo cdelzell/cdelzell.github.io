@@ -188,9 +188,18 @@ img{
     Styling for the personal statement.
 */
 
+.upperMargin{
+    margin-top: 15vw;
+}
+
+.lowerMargin{
+    margin-bottom: 15vw;
+}
+
 .personalStatement{
     font-family: "Optima";
-    padding: 15vw;
+    padding-right: 15vw;
+    padding-left: 15vw;
     text-align: center;
 }
 
@@ -199,19 +208,11 @@ img{
 }
 
 .personalStatement h1{
-    /* display: flex;
-    align-items: center; */
-    /* padding: 7vw;
-    text-align: center; */
     font-size: 4vw;
     font-weight: 100;
 }
 
 .personalStatement h2{
-    /* display: flex;
-    align-items: center; */
-    /* padding: 7vw;
-    text-align: center; */
     line-height: 4vw;
     font-size: 3.5vw;
     font-weight: 100;
@@ -219,37 +220,51 @@ img{
 
 @keyframes appear{
     from{
-        display: none;
+        opacity: 0;
     }
     to{
-        display: contents;
+        opacity: 1;
     }
 }
 
+
+/*
+    CSS for total experience section. Formats.
+*/
+
+.jobs{
+    display: grid;
+    grid-template-rows: 3fr;
+}
 /*
     Customizes each experience section.
 */
 
 .singleExp{
     font-family: "Optima";
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    /* justify-content: end; */
+    /* align-items: center;
+    justify-content: center; */
     box-sizing: border-box;
     padding: 5vw;
     overflow: hidden;
 }
 
-.singleExp .rectangleScoular{
+.rectangleScoular{
     width: 35vw;
     height: 30vw;
+    grid-row: 1;
+    grid-column: 1;
+    justify-self: end;
     border-radius: 5%;
     background-image: url("images/scoularBuild.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.singleExp .expTextRightScoular{
+.expTextRightScoular{
     box-sizing: border-box;
     width: 35vw;
     height: 30vw;
@@ -264,6 +279,7 @@ img{
 .singleExp .rectangleNSAA{
     width: 45vw;
     height: 30vw;
+    justify-self: start;
     border-radius: 5%;
     background-image: url("images/nsaaBG.jpg");
     background-repeat: no-repeat;
@@ -279,6 +295,28 @@ img{
     text-align: right;
     justify-content: space-evenly;
     padding-right: 2vw;
+    padding-bottom: 2vw;
+}
+
+.singleExp .rectangleWeb{
+    width: 38vw;
+    height: 26vw;
+    justify-self: end;
+    border-radius: 5%;
+    background-image: url("images/newMock.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.singleExp .expTextLeftWebsite{
+    box-sizing: border-box;
+    width: 35vw;
+    height: 26vw;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    padding-left: 2vw;
     padding-bottom: 2vw;
 }
 
@@ -299,36 +337,8 @@ img{
     flex-direction: column;
     text-align: left;
     justify-content: center;
-    padding-left: 2vw;
+    /* padding-left: 2vw; */
     padding-bottom: 2vw;
-}
-
-.singleExp .rectangleWeb{
-    width: 38vw;
-    height: 26vw;
-    border-radius: 5%;
-    background-image: url("images/newMock.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.singleExp .expTextLeftWebsite{
-    box-sizing: border-box;
-    width: 35vw;
-    height: 26vw;
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    justify-content: center;
-    padding-left: 2vw;
-    padding-bottom: 2vw;
-}
-
-.singleExp img{
-    box-sizing: border-box;
-    max-width: 50%;
-    height: auto;
-    padding: 2vw;
 }
 
 /*
@@ -414,21 +424,21 @@ img{
     Styling for the NSAA skills component.
 */
 
-.singleExp .rectanglePremier .expSkillsPremier {
+.singleExp .rectangleNSAA .expSkillsNSAA {
     display: none;
     border-radius: 5%;
 }
 
-.singleExp .rectanglePremier .expSkillsPremierBG {
+.singleExp .rectangleNSAA .expSkillsNSAABG {
     display: none;
-    background-image: url("images/premierWithBG.jpg");
+    background-image: url("images/nsaaBG.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     opacity: .5;
     border-radius: 5%;
 }
 
-.singleExp .rectanglePremier .expSkillsPremier h4 {
+.singleExp .rectangleNSAA .expSkillsNSAA h4 {
     font-style: none;
     font-size: 1vw;
     color:#323432;
@@ -445,11 +455,11 @@ img{
 /*
     Hover functionality of the NSAA experience class.
 */
-.singleExp .rectanglePremier:hover {
+.singleExp .rectangleNSAA:hover {
     background-image: none;
 }
 
-.singleExp .rectanglePremier:hover .expSkillsPremier{
+.singleExp .rectangleNSAA:hover .expSkillsNSAA{
     height: 100%;
     width: 100%;
     position: relative;
@@ -460,9 +470,9 @@ img{
     opacity: 1;
 }
 
-.singleExp .rectanglePremier:hover .expSkillsPremierBG{
-    width: 33vw;
-    height: 33vw;
+.singleExp .rectangleNSAA:hover .expSkillsNSAABG{
+    width: 45vw;
+    height: 30vw;
     position: absolute;
     display: flex;
     flex-direction: column;
@@ -531,24 +541,24 @@ img{
 }
 
 /*
-    Styling for the NSAA skills component.
+    Styling for the Premier skills component.
 */
 
-.singleExp .rectangleNSAA .expSkillsNSAA {
+.singleExp .rectanglePremier .expSkillsPremier {
     display: none;
     border-radius: 5%;
 }
 
-.singleExp .rectangleNSAA .expSkillsNSAABG {
+.singleExp .rectanglePremier .expSkillsPremierBG {
     display: none;
-    background-image: url("images/nsaaBG.jpg");
+    background-image: url("images/premierWithBG.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     opacity: .5;
     border-radius: 5%;
 }
 
-.singleExp .rectangleNSAA .expSkillsNSAA h4 {
+.singleExp .rectanglePremier .expSkillsPremier h4 {
     font-style: none;
     font-size: 1vw;
     color:#323432;
@@ -563,13 +573,13 @@ img{
 }
 
 /*
-    Hover functionality of the NSAA experience class.
+    Hover functionality of the Premier experience class.
 */
-.singleExp .rectangleNSAA:hover {
+.singleExp .rectanglePremier:hover {
     background-image: none;
 }
 
-.singleExp .rectangleNSAA:hover .expSkillsNSAA{
+.singleExp .rectanglePremier:hover .expSkillsPremier{
     height: 100%;
     width: 100%;
     position: relative;
@@ -580,16 +590,15 @@ img{
     opacity: 1;
 }
 
-.singleExp .rectangleNSAA:hover .expSkillsNSAABG{
-    width: 45vw;
-    height: 30vw;
+.singleExp .rectanglePremier:hover .expSkillsPremierBG{
+    width: 33vw;
+    height: 33vw;
     position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
 }
-
 
 /*
     Styling for the experience text, not currently in use.
@@ -614,19 +623,20 @@ img{
     font-size: 2vw;
 }
 
+.underline{
+    animation: underline 0s ease-in;
+    opacity: 1;
+}
+
 @keyframes underline{
     from{
-        text-decoration: none;
+        opacity: 0;
     }
     to{
-        text-decoration: underline;
-        text-decoration-color: #8FBC8B;
+        opacity: 1;
     }
 }
 
-.singleExp:hover .h2{
-    animation: underline linear forwards;
-}
 
 /*
     Creates the styling for the footer.
