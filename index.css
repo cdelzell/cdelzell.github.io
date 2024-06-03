@@ -256,8 +256,6 @@ img{
     flex-direction: column;
     text-align: left;
     justify-content: space-evenly;
-    /* box-shadow: .1vh .16vh .2vh .17vw #404140;
-    border-radius: 5%; */
     padding-left: 2vw;
     padding-bottom: 2vw;
 }
@@ -279,8 +277,6 @@ img{
     flex-direction: column;
     text-align: right;
     justify-content: space-evenly;
-    /* box-shadow: .1vh .16vh .2vh .17vw #404140;
-    border-radius: 5%; */
     padding-right: 2vw;
     padding-bottom: 2vw;
 }
@@ -301,8 +297,6 @@ img{
     flex-direction: column;
     text-align: left;
     justify-content: center;
-    /* box-shadow: .1vh .16vh .2vh .17vw #404140;
-    border-radius: 5%; */
     padding-left: 2vw;
     padding-bottom: 2vw;
 }
@@ -324,8 +318,6 @@ img{
     flex-direction: column;
     text-align: right;
     justify-content: center;
-    /* box-shadow: .1vh .16vh .2vh .17vw #404140;
-    border-radius: 5%; */
     padding-right: 2vw;
     padding-bottom: 2vw;
 }
@@ -343,41 +335,28 @@ img{
 */
 .singleExp .rectanglePremier .expSkillsPremier {
     display: none;
-    /* background-image: url("images/scoularBuild.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: .5; */
     border-radius: 5%;
 }
 
-.singleExp .rectanglePremier .expSkillsPremier::before {
+.singleExp .rectanglePremier .expSkillsPremierBG {
     display: none;
-    background-image: url("images/scoularBuild.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: .5;
-    border-radius: 5%;
-
-}
-
-.singleExp .rectanglePremier .expSkillsBackground {
-    display: none;
-    background-image: url("images/scoularBuild.jpeg");
+    background-image: url("images/premier.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     opacity: .5;
     border-radius: 5%;
 }
 
-.singleExp .rectanglePremier .expSkillsPremier .rectangle{
+.singleExp .rectangle{
     height: 30%;
     width: 50%;
     border-radius: 5%;
-    color: rgb(63, 67, 64);
+    color: rgb(0, 0, 0);
     display: flex;
     align-items: center;
     justify-content: center;
     box-shadow: .1% .16% .16% #2c2e2c;
+    font-size: 2vw;
     transition: transform .5s;
     box-sizing: border-box;
 }
@@ -398,7 +377,7 @@ img{
 
 
 /*
-    Hover functionality of the experience class.
+    Hover functionality of the premier experience class.
 */
 .singleExp .rectanglePremier:hover {
     background-image: none;
@@ -412,12 +391,13 @@ img{
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
+    opacity: 1;
 }
 
-.singleExp .rectanglePremier:hover .expSkillsBackground{
-    height: 100%;
-    width: 100%;
-    position: relative;
+.singleExp .rectanglePremier:hover .expSkillsPremierBG{
+    width: 30vw;
+    height: 30vw;
+    position: absolute;
     display: flex;
     flex-direction: column;
     align-items: center;
