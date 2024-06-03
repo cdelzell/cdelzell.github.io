@@ -212,6 +212,7 @@ img{
     align-items: center; */
     /* padding: 7vw;
     text-align: center; */
+    line-height: 4vw;
     font-size: 3.5vw;
     font-weight: 100;
 }
@@ -264,7 +265,7 @@ img{
     width: 45vw;
     height: 30vw;
     border-radius: 5%;
-    background-image: url("images/nsaa.jpeg");
+    background-image: url("images/nsaaBG.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -282,9 +283,10 @@ img{
 }
 
 .singleExp .rectanglePremier{
-    width: 30vw;
-    height: 30vw;
-    background-image: url("images/premier.jpeg");
+    width: 33vw;
+    height: 33vw;
+    border-radius: 5%;
+    background-image: url("images/premierWithBG.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -301,11 +303,11 @@ img{
     padding-bottom: 2vw;
 }
 
-.singleExp .rectangleWebsite{
-    width: 35vw;
+.singleExp .rectangleWeb{
+    width: 38vw;
     height: 26vw;
     border-radius: 5%;
-    background-image: url("images/trees.jpeg");
+    background-image: url("images/newMock.jpg");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -316,9 +318,9 @@ img{
     height: 26vw;
     display: flex;
     flex-direction: column;
-    text-align: right;
+    text-align: left;
     justify-content: center;
-    padding-right: 2vw;
+    padding-left: 2vw;
     padding-bottom: 2vw;
 }
 
@@ -330,22 +332,9 @@ img{
 }
 
 /*
-    Creates the skills view of the experience rectangle.
+    Creates the general skills view of the experience rectangle.
     Provides information on skills gained in previous/current positions.
 */
-.singleExp .rectanglePremier .expSkillsPremier {
-    display: none;
-    border-radius: 5%;
-}
-
-.singleExp .rectanglePremier .expSkillsPremierBG {
-    display: none;
-    background-image: url("images/premier.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: .5;
-    border-radius: 5%;
-}
 
 .singleExp .rectangle{
     height: 30%;
@@ -359,6 +348,84 @@ img{
     font-size: 2vw;
     transition: transform .5s;
     box-sizing: border-box;
+}
+
+/*
+    Styling for the Scoular skills component.
+*/
+
+.singleExp .rectangleScoular .expSkillsScoular {
+    display: none;
+    border-radius: 5%;
+}
+
+.singleExp .rectangleScoular .expSkillsScoularBG {
+    display: none;
+    background-image: url("images/scoularBuild.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .5;
+    border-radius: 5%;
+}
+
+.singleExp .rectangleScoular .expSkillsScoular h4 {
+    font-style: none;
+    font-size: 1vw;
+    color:#323432;
+    display: flex;
+    font-family:'Bodoni MT', 'Bodoni 72' serif;
+    align-items: center;
+    justify-content: center;
+    padding: 1vw;
+    box-sizing: border-box;
+    white-space: normal;
+    text-align: center;
+}
+
+/*
+    Hover functionality of the Scoular experience class.
+*/
+.singleExp .rectangleScoular:hover {
+    background-image: none;
+}
+
+.singleExp .rectangleScoular:hover .expSkillsScoular{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    opacity: 1;
+}
+
+.singleExp .rectangleScoular:hover .expSkillsScoularBG{
+    width: 35vw;
+    height: 30vw;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/*
+    Styling for the NSAA skills component.
+*/
+
+.singleExp .rectanglePremier .expSkillsPremier {
+    display: none;
+    border-radius: 5%;
+}
+
+.singleExp .rectanglePremier .expSkillsPremierBG {
+    display: none;
+    background-image: url("images/premierWithBG.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .5;
+    border-radius: 5%;
 }
 
 .singleExp .rectanglePremier .expSkillsPremier h4 {
@@ -375,9 +442,8 @@ img{
     text-align: center;
 }
 
-
 /*
-    Hover functionality of the premier experience class.
+    Hover functionality of the NSAA experience class.
 */
 .singleExp .rectanglePremier:hover {
     background-image: none;
@@ -395,7 +461,127 @@ img{
 }
 
 .singleExp .rectanglePremier:hover .expSkillsPremierBG{
-    width: 30vw;
+    width: 33vw;
+    height: 33vw;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/*
+    Styling for the Website skills component.
+*/
+
+.singleExp .rectangleWeb .expSkillsWeb {
+    display: none;
+    border-radius: 5%;
+}
+
+.singleExp .rectangleWeb .expSkillsWebBG {
+    display: none;
+    background-image: url("images/newMock.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .5;
+    border-radius: 5%;
+}
+
+.singleExp .rectangleWeb .expSkillsWeb h4 {
+    font-style: none;
+    font-size: 1vw;
+    color:#323432;
+    display: flex;
+    font-family:'Bodoni MT', 'Bodoni 72' serif;
+    align-items: center;
+    justify-content: center;
+    padding: 1vw;
+    box-sizing: border-box;
+    white-space: normal;
+    text-align: center;
+}
+
+/*
+    Hover functionality of the website experience class.
+*/
+.singleExp .rectangleWeb:hover {
+    background-image: none;
+}
+
+.singleExp .rectangleWeb:hover .expSkillsWeb{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    opacity: 1;
+}
+
+.singleExp .rectangleWeb:hover .expSkillsWebBG{
+    width: 38vw;
+    height: 26vw;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+/*
+    Styling for the NSAA skills component.
+*/
+
+.singleExp .rectangleNSAA .expSkillsNSAA {
+    display: none;
+    border-radius: 5%;
+}
+
+.singleExp .rectangleNSAA .expSkillsNSAABG {
+    display: none;
+    background-image: url("images/nsaaBG.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .5;
+    border-radius: 5%;
+}
+
+.singleExp .rectangleNSAA .expSkillsNSAA h4 {
+    font-style: none;
+    font-size: 1vw;
+    color:#323432;
+    display: flex;
+    font-family:'Bodoni MT', 'Bodoni 72' serif;
+    align-items: center;
+    justify-content: center;
+    padding: 1vw;
+    box-sizing: border-box;
+    white-space: normal;
+    text-align: center;
+}
+
+/*
+    Hover functionality of the NSAA experience class.
+*/
+.singleExp .rectangleNSAA:hover {
+    background-image: none;
+}
+
+.singleExp .rectangleNSAA:hover .expSkillsNSAA{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    opacity: 1;
+}
+
+.singleExp .rectangleNSAA:hover .expSkillsNSAABG{
+    width: 45vw;
     height: 30vw;
     position: absolute;
     display: flex;
@@ -404,9 +590,6 @@ img{
     justify-content: space-evenly;
 }
 
-.singleExp .expSkills .rectangle:hover{
-    transform: scale(1,1);
-}
 
 /*
     Styling for the experience text, not currently in use.
