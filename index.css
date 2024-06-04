@@ -662,6 +662,42 @@ img{
     }
 }
 
+/*
+    Styling for the skill section.
+*/
+
+.break{
+    border-top: .2vw solid #9abaa1;
+    color: #5c7361;
+    size: 1vw;
+    padding: 0;
+    width: 40vw;
+}
+
+.skillHeading{
+    font-family: "Optima";
+    font-size: 5vw;
+    font-weight: 30;
+    text-align: center;
+    font-style: italic;
+    padding: 0;
+}
+
+.skillImg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.skillImg img{
+    width: 5vw;
+    height: auto;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    padding-top: 1vw;
+    padding-bottom: 3vw;
+}
 
 /*
     Creates the styling for the footer.
