@@ -54,14 +54,38 @@ const personalStatement = new IntersectionObserver(entries => {
 
 personalStatement.observe(document.getElementById("blurb"));
 
-const heading = new IntersectionObserver(entries => {
+const heading1 = new IntersectionObserver(entries => {
     for(let i = 0; i < entries.length; i++){
         if(entries[i].isIntersecting){
-            entries[i].target.classList.add("underline");
+            entries[i].target.classList.add("fadeLineIn");
         } else{
-            entries[i].target.classList.remove("underline");
+            entries[i].target.classList.remove("fadeLineIn");
         }
     }
 })
 
-heading.observe(document.getElementsByClassName("line"));
+heading1.observe(document.getElementById("line1"));
+
+const heading2 = new IntersectionObserver(entries => {
+    for(let i = 0; i < entries.length; i++){
+        if(entries[i].isIntersecting){
+            entries[i].target.classList.add("fadeLineIn");
+        } else{
+            entries[i].target.classList.remove("fadeLineIn");
+        }
+    }
+})
+
+heading2.observe(document.getElementById("line2"));
+
+const heading3 = new IntersectionObserver(entries => {
+    for(let i = 0; i < entries.length; i++){
+        if(entries[i].isIntersecting){
+            entries[i].target.classList.add("fadeLineIn");
+        } else{
+            entries[i].target.classList.remove("fadeLineIn");
+        }
+    }
+})
+
+heading3.observe(document.getElementById("line3"));

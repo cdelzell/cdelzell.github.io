@@ -624,30 +624,41 @@ img{
     font-size: 2vw;
 }
 
-.line{
+.leftLine{
     border-top: .3vw solid #9abaa1;
     color: #9abaa1;
     fill:#9abaa1;
     size: 1vw;
-    align: left;
+    margin-left: 0;
     display: block;
     /* height: .25vw; */
     padding: 0;
     width: 10vw;
 }
 
-.underline{
-    animation: underline 1s ease-out;
+.rightLine{
+    border-top: .3vw solid #9abaa1;
+    color: #9abaa1;
+    fill:#9abaa1;
+    size: 1vw;
+    margin-right: 0;
+    display: block;
+    /* height: .25vw; */
+    padding: 0;
+    width: 10vw;
+}
+
+.fadeLineIn{
+    animation: fadeLineInAnm 1s ease-out;
     opacity: 1; 
 }
 
-@keyframes underline{
+@keyframes fadeLineInAnm{
     from{
         opacity: 0;
     }
     to{
         opacity: 1;
-        display: block;
     }
 }
 
