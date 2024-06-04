@@ -52,7 +52,7 @@ const personalStatement = new IntersectionObserver(entries => {
     }
 })
 
-personalStatement.observe(document.getElementById("hello"));
+personalStatement.observe(document.getElementById("blurb"));
 
 const heading = new IntersectionObserver(entries => {
     for(let i = 0; i < entries.length; i++){
@@ -64,4 +64,4 @@ const heading = new IntersectionObserver(entries => {
     }
 })
 
-heading.observe(document.getElementById("heading"));
+heading.observe(document.getElementsByClassName("line"));
