@@ -201,9 +201,11 @@ img{
     padding-right: 15vw;
     padding-left: 15vw;
     text-align: center;
+    opacity: 0;
 }
 
 .personalStatementAnimation{
+    opacity: 1;
     animation: appear 2s linear;
 }
 
@@ -630,8 +632,7 @@ img{
     fill:#9abaa1;
     size: 1vw;
     margin-left: 0;
-    display: block;
-    /* height: .25vw; */
+    opacity: 0;
     padding: 0;
     width: 10vw;
 }
@@ -642,14 +643,13 @@ img{
     fill:#9abaa1;
     size: 1vw;
     margin-right: 0;
-    display: block;
-    /* height: .25vw; */
+    opacity: 0;
     padding: 0;
     width: 10vw;
 }
 
 .fadeLineIn{
-    animation: fadeLineInAnm 1s ease-out;
+    animation: fadeLineInAnm 2s ease-out;
     opacity: 1; 
 }
 
@@ -667,7 +667,6 @@ img{
     Creates the styling for the footer.
 */
 .footer{
-    /* position: relative; */
     height: 5vw;
     background-color: #6a7d6e;
     display: flex;
@@ -677,9 +676,6 @@ img{
     margin-top: 4vw;
     overflow: hidden;
     z-index: 5;
-    /* position: sticky; */
-    /* font-size: 2vw; */
-    /* padding: 2%; */
 }
 
 .footer .icons a{
