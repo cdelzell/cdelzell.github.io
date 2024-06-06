@@ -71,7 +71,7 @@ a:hover{
     Navigation bar styling.
 */
 nav{
-    height: 4vw;
+    height: 6vh;
     background-color: rgb(255, 255, 255);
     position: sticky;
     top: 0;
@@ -116,18 +116,16 @@ nav h1{
 }
 
 img{
-    max-width: 100%;
-    height: auto;
+    width: 100%;
+    height: 94vh;
     z-index:0;
 }
 
 .welcome .welcomeText{
-    font-size: 10vw;
-    /* padding: 2vw; */
-    line-height: 7vw;
-    /* transform: translate(0, -50%, ); */
-    margin-top: -28vw;
-    margin-right: 39vw;
+    font-size: 13vw;
+    line-height: 5vw;
+    margin-top: -38vw;
+    margin-right: 28vw;
     animation: reveal 2s ease-in;
     color:#faf9f9;
     font-weight: 100;
@@ -148,7 +146,7 @@ img{
 */
 
 .welcome .introConnect{
-    margin-top: 17vw;
+    margin-top: 29vw;
     margin-right: 70vw;
     display: flex;
     align-items: center;
@@ -604,13 +602,13 @@ img{
 }
 
 /*
-    Styling for the experience text, not currently in use.
+    Styling for the experience text.
 */
 
 .text h2{
     margin: .5vw;
     font-weight: 100;
-    font-size: 5vw;
+    font-size: 4vw;
 }
 
 .text h4{
