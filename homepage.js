@@ -40,8 +40,6 @@
 // }
 // );
 
-
-
 const personalStatement = new IntersectionObserver(entries => {
     for(let i = 0; i < entries.length; i++){
         if(entries[i].isIntersecting){
