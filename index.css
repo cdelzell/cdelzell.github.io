@@ -117,15 +117,17 @@ nav h1{
 
 img{
     width: 100%;
-    height: 94vh;
+    height: auto;
     z-index:0;
 }
 
 .welcome .welcomeText{
-    font-size: 13vw;
-    line-height: 5vw;
-    margin-top: -38vw;
-    margin-right: 28vw;
+    font-size: 10vw;
+    /* padding: 2vw; */
+    line-height: 7vw;
+    /* transform: translate(0, -50%, ); */
+    margin-top: -28vw;
+    margin-right: 39vw;
     animation: reveal 2s ease-in;
     color:#faf9f9;
     font-weight: 100;
@@ -146,7 +148,8 @@ img{
 */
 
 .welcome .introConnect{
-    margin-top: 29vw;
+    background-color: white;
+    margin-top: 17vw;
     margin-right: 70vw;
     display: flex;
     align-items: center;
@@ -356,7 +359,7 @@ img{
     align-items: center;
     justify-content: center;
     box-shadow: .1% .16% .16% #2c2e2c;
-    font-size: 2vw;
+    font-size: 1.5vw;
     transition: transform .5s;
     box-sizing: border-box;
 }
@@ -430,6 +433,29 @@ img{
     border-radius: 5%;
 }
 
+.expSkillsNSAA .col {
+    height: auto;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.singleExp .rectangle{
+    height: 40%;
+    width: 75%;
+    border-radius: 5%;
+    color: rgb(0, 0, 0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: .1% .16% .16% #2c2e2c;
+    font-size: 1.5vw;
+    transition: transform .5s;
+    box-sizing: border-box;
+}
+
 .singleExp .rectangleNSAA .expSkillsNSAABG {
     display: none;
     background-image: url("images/nsaaBG.jpg");
@@ -465,7 +491,7 @@ img{
     width: 100%;
     position: relative;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
     opacity: 1;
@@ -663,6 +689,10 @@ img{
 /*
     Styling for the skill section.
 */
+
+.expSkillsNSAA .rectangle h4{
+    font-size: 3vw;
+}
 
 .break{
     border-top: .2vw solid #9abaa1;
