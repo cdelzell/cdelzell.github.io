@@ -51,7 +51,7 @@ blockquote, q {
     General styling.
 */
 :root{
-    --font-family: 'Playfair Display';
+    --font-family: 'Gill Sans';
     /* --font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana; */
     --primary-color: #000000;	
     --secondary-color: #8FBC8B;
@@ -101,7 +101,7 @@ nav li{
     font-size: 1.5vw;
 }
 
-nav h1{
+nav p{
     font-size: 2vw;
 }
 
@@ -123,6 +123,7 @@ img{
 
 .welcome .welcomeText{
     font-size: 10vw;
+    font-family: 'Playfair Display';
     /* padding: 2vw; */
     line-height: 7vw;
     /* transform: translate(0, -50%, ); */
@@ -198,7 +199,6 @@ img{
 }
 
 .personalStatement{
-    font-family: "Helvetica";
     padding-right: 15vw;
     padding-left: 15vw;
     text-align: center;
@@ -213,12 +213,13 @@ img{
 .personalStatement h1{
     font-size: 4vw;
     font-weight: 100;
+    font-style: normal;
 }
 
 .personalStatement h2{
     line-height: 4vw;
     font-size: 3.5vw;
-    font-weight: 100;
+    font-weight: 75;
 }
 
 @keyframes appear{
@@ -244,7 +245,6 @@ img{
 */
 
 .singleExp{
-    font-family: "Helvetica";
     display: grid;
     grid-template-columns: 1fr 1fr;
     /* justify-content: end; */
@@ -387,7 +387,6 @@ img{
     font-size: 1vw;
     color:#323432;
     display: flex;
-    font-family:'Helvetica';
     align-items: center;
     justify-content: center;
     padding: 1vw;
@@ -434,7 +433,7 @@ img{
 }
 
 .expSkillsNSAA .col {
-    height: auto;
+    height: 60%;
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -444,7 +443,7 @@ img{
 }
 
 .expSkillsNSAA .col .rectangle{
-    height: 40%;
+    height: 60%;
     width: 70%;
     border-radius: 5%;
     color: rgb(0, 0, 0);
@@ -472,7 +471,6 @@ img{
     font-size: 1vw;
     color:#323432;
     display: flex;
-    font-family:'Helvetica';
     align-items: center;
     justify-content: center;
     padding: 1vw;
@@ -532,7 +530,6 @@ img{
     font-size: 1vw;
     color:#323432;
     display: flex;
-    font-family:'Helvetica';
     align-items: center;
     justify-content: center;
     padding: 1vw;
@@ -592,7 +589,6 @@ img{
     font-size: 1vw;
     color:#323432;
     display: flex;
-    font-family:'Helvetica';
     align-items: center;
     justify-content: center;
     padding: 1vw;
@@ -705,7 +701,6 @@ img{
 }
 
 .skillHeading{
-    font-family: "Helvetica";
     font-size: 5vw;
     font-weight: 30;
     text-align: center;
