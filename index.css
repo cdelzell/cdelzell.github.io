@@ -244,7 +244,7 @@ img{
 */
 
 .singleExp{
-    font-family: "Optima";
+    font-family: "Helvetica";
     display: grid;
     grid-template-columns: 1fr 1fr;
     /* justify-content: end; */
@@ -387,7 +387,7 @@ img{
     font-size: 1vw;
     color:#323432;
     display: flex;
-    font-family:'Bodoni MT', 'Bodoni 72' serif;
+    font-family:'Helvetica';
     align-items: center;
     justify-content: center;
     padding: 1vw;
@@ -472,7 +472,7 @@ img{
     font-size: 1vw;
     color:#323432;
     display: flex;
-    font-family:'Bodoni MT', 'Bodoni 72' serif;
+    font-family:'Helvetica';
     align-items: center;
     justify-content: center;
     padding: 1vw;
@@ -532,7 +532,7 @@ img{
     font-size: 1vw;
     color:#323432;
     display: flex;
-    font-family:'Bodoni MT', 'Bodoni 72' serif;
+    font-family:'Helvetica';
     align-items: center;
     justify-content: center;
     padding: 1vw;
@@ -592,7 +592,7 @@ img{
     font-size: 1vw;
     color:#323432;
     display: flex;
-    font-family:'Bodoni MT', 'Bodoni 72' serif;
+    font-family:'Helvetica';
     align-items: center;
     justify-content: center;
     padding: 1vw;
@@ -705,7 +705,7 @@ img{
 }
 
 .skillHeading{
-    font-family: "Optima";
+    font-family: "Helvetica";
     font-size: 5vw;
     font-weight: 30;
     text-align: center;
