@@ -771,3 +771,7 @@ footer .icons img{
     height: auto;
     box-sizing: border-box;
 }
+
+footer .icons a .p:hover {
+    color: var(--secondary-color);
+}
