@@ -51,7 +51,7 @@ blockquote, q {
     General styling.
 */
 :root{
-    --font-family: 'Gill Sans';
+    --font-family: 'Gill Sans', 'Gill Sans MT';
     /* --font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana; */
     --primary-color: #000000;	
     --secondary-color: #8FBC8B;
