@@ -68,6 +68,19 @@ a:hover{
 }
 
 /*
+
+*/
+
+html[data-useragent*='Mac OS X'] {
+    font-family: 'Gill Sans', sans-serif;
+  }
+  
+  html[data-useragent*='Win'] {
+    font-family: 'Gill Sans MT', sans-serif;
+    font-weight: 800; 
+  }
+
+/*
     Navigation bar styling.
 */
 nav{
